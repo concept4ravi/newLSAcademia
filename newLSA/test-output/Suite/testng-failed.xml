@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="main.StudentAttendence">
+        <methods>
+          <include name="ByTeacher_MarkAttendence"/>
+          <include name="signInAndMoveToStudentRecord"/>
+          <include name="ByTeacher_DeleteAttendence"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- main.StudentAttendence -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="main.AcademicAdministrationTest">
+        <methods>
+          <include name="AcademicStructure_Courses_Add"/>
+          <include name="signInAndMoveToStudentRecord"/>
+          <include name="DefineSections_Add"/>
+          <include name="SubjectRegRule"/>
+          <include name="CoursewiseDetailReport"/>
+          <include name="DefineSections_Delete"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="AcademicStructure_Courses_Delete"/>
+        </methods>
+      </class> <!-- main.AcademicAdministrationTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="main.StudentRecord_Test">
+        <methods>
+          <include name="signInAndMoveToStudentRecord"/>
+          <include name="MaintainDocumentList_Add"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- main.StudentRecord_Test -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="main.StudentRecord_TestSuit">
+        <methods>
+          <include name="studentProfile_View"/>
+          <include name="signInAndMoveToStudentRecord"/>
+          <include name="MaintainDocument"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="AwardsScholarships_Delete"/>
+          <include name="DisciplinaryCases"/>
+          <include name="MaintainDocumentList_Add"/>
+          <include name="studentProfile_Add"/>
+          <include name="AwardsScholarships_Add"/>
+          <include name="NotingOnStudent"/>
+        </methods>
+      </class> <!-- main.StudentRecord_TestSuit -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
